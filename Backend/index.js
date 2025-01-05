@@ -10,9 +10,11 @@ import dotenv from "dotenv";
 import { fileURLToPath } from "url";
 import path from "path";
 import LangflowClient from "./LangFlowClient.js";
-const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
-const __dirname = path.dirname(__filename);
-dotenv.config({ path: path.resolve(__dirname, "./.env") });
+// const __filename = fileURLToPath(import.meta.url); // get the resolved path to the file
+// const __dirname = path.dirname(__filename);
+// dotenv.config({ path: path.resolve(__dirname, "./.env") });
+
+dotenv.config()
 
 const SocialMediaApi=asyncHandlers(async(req,res)=>
 {
@@ -225,6 +227,21 @@ router.route("/getAllAnalysis").post(SocialMediaApi);
 
 app.use("/api/v1/socialMedia",router)
 
+const __dirname1 = path.resolve();
+
+//-----------------Deployement-----------//
+
+if (process.env.NODE_ENV === "production") {
+  app.use(express.static(path.join(__dirname1, "/LangflowFrontend-final/dist")));
+
+  app.get("*", (req, res) =>
+    res.sendFile(path.resolve(__dirname1, "LangflowFrontend-final", "dist", "index.html"))
+  );
+} else {
+  app.get("/", (req, res) => {
+    res.send("API is running..");
+  });
+}
 
 try{
     app.listen(process.env.PORT, () => {

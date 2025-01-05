@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start": "nodemon Backend/index.js",
+    "build": "npm install && npm install --prefix LangflowFrontend-final && npm run build --prefix LangflowFrontend-final"
   },
   "author": "Vaibhav Agarwal, Omkar Jagtap,Atif, Atharv",
   "license": "ISC",
