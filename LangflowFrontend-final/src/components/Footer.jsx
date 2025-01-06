@@ -21,7 +21,7 @@ const Footer = () => {
               <img src={omkar} alt="Member 1" className="member-image" />
               <p>Omkar</p>
               <div className="Purl">
-                <a target="_blank" href="https://github.com/omkarjagtap2212" className="targetSpan" ><BsLinkedin /></a> <a target="_blank" href="https://github.com/omkarjagtap2212" ><FaGithub /></a>
+                <a target="_blank" href="https://www.linkedin.com/in/omkar-jagtap-a1ba13221/" className="targetSpan" ><BsLinkedin /></a> <a target="_blank" href="https://github.com/omkarjagtap2212" ><FaGithub /></a>
 
               </div>
             </div>
@@ -29,23 +29,23 @@ const Footer = () => {
               <img src={P2R} alt="Member 2" className="member-image" />
               <p>Vaibhav</p>
               <div className="Purl">
-              <a target="_blank" href="https://github.com/omkarjagtap2212" className="targetSpan" ><BsLinkedin /></a> <a target="_blank" href="https://github.com/omkarjagtap2212" ><FaGithub /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/vaibhavagarwal18/" className="targetSpan" ><BsLinkedin /></a> <a target="_blank" href="https://github.com/vaibhavagarwaleverest" ><FaGithub /></a>
               </div>
             </div>
             <div className="member">
               <img src={p1R} alt="Member 3" className="member-image" />
               <p>Atharv</p>
               <div className="Purl">
-              <a target="_blank" href="https://github.com/omkarjagtap2212" className="targetSpan" ><BsLinkedin /></a> <a target="_blank" href="https://github.com/omkarjagtap2212" ><FaGithub /></a>
+              <a target="_blank" href="https://www.linkedin.com/in/atharva-kulkarni-india/" className="targetSpan" ><BsLinkedin /></a> <a target="_blank" href="https://github.com/TheAkHack" ><FaGithub /></a>
               </div>
             </div>
-            <div className="member">
+            {/* <div className="member">
               <img src={p4} alt="Member 4" className="member-image" />
               <p>Atif </p>
               <div className="Purl">
               <a target="_blank" href="https://github.com/omkarjagtap2212" className="targetSpan" ><BsLinkedin /></a> <a target="_blank" href="https://github.com/omkarjagtap2212" ><FaGithub /></a>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
