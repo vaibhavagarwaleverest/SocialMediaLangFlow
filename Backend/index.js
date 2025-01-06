@@ -21,7 +21,7 @@ dotenv.config()
 
 const SocialMediaApi=asyncHandlers(async(req,res)=>
 {
-const {input}=req.body
+const {inputValue}=req.body
 async function main(inputValue, inputType = 'chat', outputType = 'chat', stream = false) {
     console.log(inputValue)
     const flowIdOrName = 'd179e86d-d642-4a4b-bca5-568c07e8d902';
@@ -207,7 +207,7 @@ async function main(inputValue, inputType = 'chat', outputType = 'chat', stream 
 }
 
 main(
-    input, // inputValue
+    inputValue, // inputValue
     'chat', // inputType
     'chat', // outputType
     false // stream
