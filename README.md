@@ -20,7 +20,7 @@ Check out the video walkthrough of the Social Media Performance Analysis Tool on
 ### Frontend
 
 - **React.js**
-- **CSS/SCSS**
+- **CSS**
 
 ### Backend
 
@@ -62,7 +62,7 @@ Check out the video walkthrough of the Social Media Performance Analysis Tool on
    - Configure environment variables in a `.env` file:
      ```
      PORT=3000
-     applicationToken='AstraCS:wPvyevdMSABInkfCPmGQvDyD:af8372edb05216a359915b8f2de118e65155207278b2b07628a0fade2b6d8c8f'
+     applicationToken='YOUR_DATASTAX_LANGFLOW_APPLICATION_TOKEN'
      NODE_ENV='production'
      ```
    - Start the server:
