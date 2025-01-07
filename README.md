@@ -12,6 +12,9 @@ This project was built as part of the Level SuperMind Hackathon.
 - **Scalable Data Storage**: Powered by DataStax Astra DB for high-performance, scalable, and secure data storage.
 - **Customizable Reports**: Generate and download detailed performance reports.
 
+## Video Walkthrough
+Check out the video walkthrough of the Social Media Performance Analysis Tool on YouTube to get an overview of its features and how to use it: https://youtu.be/9tYPfpKsM7U
+
 ## Tech Stack
 
 ### Frontend
